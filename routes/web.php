@@ -11,18 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return url('/');
-});
-
-Route::get('/1', function () {
-    return url('/');
-});
-
-Route::get('/1/1', function () {
-    return url('/');
-});
-
-Route::get('/2', function () {
-    return url('/');
-});
+Route::get('/', 'RouteController@first');
+Route::get('/1', 'RouteController@second');
+Route::get('/1/2', 'RouteController@third');
